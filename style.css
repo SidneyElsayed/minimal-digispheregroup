@@ -32,7 +32,6 @@ body           { font-family: "Poppins", sans-serif; }
 
 header a {
     border: 1px solid transparent;
-    transition: all 150ms;
 }
 
 header a:hover {

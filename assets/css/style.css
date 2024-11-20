@@ -466,6 +466,9 @@ video {
 .col-span-9 {
   grid-column: span 9 / span 9;
 }
+.m-auto {
+  margin: auto;
+}
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -481,6 +484,10 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .mt-20 {
   margin-top: 5rem;
@@ -518,6 +525,9 @@ video {
 .w-full {
   width: 100%;
 }
+.max-w-xl {
+  max-width: 36rem;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -533,6 +543,9 @@ video {
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -554,6 +567,9 @@ video {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -631,6 +647,14 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -645,6 +669,12 @@ video {
 }
 .pt-6 {
   padding-top: 1.5rem;
+}
+.pt-8 {
+  padding-top: 2rem;
+}
+.pt-12 {
+  padding-top: 3rem;
 }
 .text-center {
   text-align: center;
@@ -664,6 +694,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -712,7 +750,6 @@ body           { font-family: "Poppins", sans-serif; }
 
 header a {
     border: 1px solid transparent;
-    transition: all 150ms;
 }
 
 header a:hover {
@@ -746,6 +783,9 @@ footer a:hover {
   }
   .sm\:block {
     display: block;
+  }
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .sm\:gap-16 {
     gap: 4rem;

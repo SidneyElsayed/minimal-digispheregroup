@@ -1,0 +1,21 @@
+<section class="py-32 px-8 sm:px-16 text-center">
+  <div class="max-w-xl m-auto">
+    {% if block.heading %}
+    <h2 class="uppercase font-bold text-4xl pb-6">{{block.heading}}</h2>
+    {% endif %}
+    {% if block.text %}
+    <p class="pb-4">{{block.text}}</p>
+    {% endif %}
+  </div>
+  <!-- Image Grid Section -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-1 pt-6">
+    {% for item in block.image-loop %}
+    <img class="aspect-square w-full object-cover border border-featured" src="{{item.image}}" alt="{{item.alt}}">
+    {% endfor %}
+  </div>
+  <div class="pt-12">
+    {% if block.button-link and block.button-text %}
+    <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
+    {% endif %}
+  </div>
+</section>
