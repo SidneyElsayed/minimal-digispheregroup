@@ -1,0 +1,9 @@
+</section>
+<div class="flex text-center">
+  {% for item in block.name-banner | limit:6 %}
+  {% if item.text %}
+    <div class="hidden sm:block border border-t-0 border-r-0 border-featured py-2 w-full">{{item.text}}</div>
+  {% endif %}
+  {% endfor %}
+  </div>
+<section>
