@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <title>{{page.title}}</title>
-</head>
+<!-- Head -->
+{% include site-head.html %}
 
-<body>
-    {{content}}
+<style>
+   :root {
+      --featured-color: {{site.data.style.featured-color}};
+      --accent-color: {{site.data.style.accent-color}};
+      --light-accent-color: {{site.data.style.light-accent-color}};
+      --base-color: {{site.data.style.base-color}};
+   }
+</style>
+
+<body class="bg-base-color text-featured">
+
+ <!-- Header -->
+ {% include header.html %}
+
+ {% for block in page.blocks %}
+
+ {% include /{{block.id}}.html %}
+
+ {% endfor %}
+
+    <!-- {{content}} -->
+
+ {% include footer.html %}
+
 </body>
-
 </html>

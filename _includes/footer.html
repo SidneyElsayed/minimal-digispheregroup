@@ -1,0 +1,36 @@
+<footer class="uppercase px-8 sm:px-16">
+  <!-- order shifted on the newsletter to bring it above on mobile, but then needed to make the flex only on md, which meant we needed to add grid to the default/small size -->
+  <div class="border-accent py-16 grid gap-12 justify-center md:flex md:justify-between">
+    <div class="flex gap-16">
+      <div class="">
+        <p class="font-bold pb-4">Group name</p>
+        <a href="#" class="block">Link 1</a>
+        <a href="#" class="block">Link 2</a>
+        <a href="#" class="block">Link 3</a>
+        <a href="#" class="block">Link 4</a>
+      </div>
+      <div class="">
+        <p class="font-bold pb-4">Link groups</p>
+        <a href="#" class="block">Link 1</a>
+        <a href="#" class="block">Link 2</a>
+        <a href="#" class="block">Link 3</a>
+        <a href="#" class="block">Link 4</a>
+      </div>
+      <div class="">
+          <p class="font-bold pb-4">Another group</p>
+          <a href="#" class="block">Link 1</a>
+          <a href="#" class="block">Link 2</a>
+          <a href="#" class="block">Link 3</a>
+          <a href="#" class="block">Link 4</a>
+        </div>
+    </div>
+    <form class="flex flex-col order-first md:order-none">
+      <p>Subscribe to our newsletter</p>
+      <label class="sr-only" for="_replyto"> Email </label>
+      <input class="my-4 border-featured border bg-inherit focus:bg-light-accent focus:outline-none pl-2" type="email" name="_replyto" id="_replyto" placeholder=""/>
+      <div>
+        <a href="" type="submit" class="button"> Subscribe </a>
+      </div>
+    </form>
+  </div>
+</footer>
