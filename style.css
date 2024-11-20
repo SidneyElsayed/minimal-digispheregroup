@@ -10,6 +10,10 @@
 
 /* Custom CSS */
 
+/* Typography */
+body           { font-family: "Poppins", sans-serif; }
+.featured-text { font-family: "Montserrat", sans-serif;}
+
 /* Button styles */
 
 .button {
@@ -26,8 +30,16 @@
     border: 1px solid transparent;
 }
 
+header a {
+    border: 1px solid transparent;
+    transition: all 150ms;
+}
+
 header a:hover {
-    background-color: var(--light-accent-color)/50;
+    background-color: var(--featured-color);
+    border: 1px solid var(--featured-color);
+    border-radius: 15px;
+
 }
 
 footer a {

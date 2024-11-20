@@ -460,9 +460,26 @@ video {
 .order-first {
   order: -9999;
 }
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.-ml-24 {
+  margin-left: -6rem;
+}
+.mt-36 {
+  margin-top: 9rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .block {
   display: block;
@@ -481,6 +498,12 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-80 {
+  width: 20rem;
+}
+.w-60 {
+  width: 15rem;
 }
 .grow {
   flex-grow: 1;
@@ -507,8 +530,14 @@ video {
 .gap-16 {
   gap: 4rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .border {
   border-width: 1px;
+}
+.border-2 {
+  border-width: 2px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -529,11 +558,16 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
 .p-2 {
   padding: 0.5rem;
-}
-.p-4 {
-  padding: 1rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -543,11 +577,25 @@ video {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pt-36 {
+  padding-top: 9rem;
 }
 .text-center {
   text-align: center;
@@ -566,6 +614,12 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
 .text-accent {
   color: var(--accent-color);
 }
@@ -578,6 +632,10 @@ video {
 }
 
 /* Custom CSS */
+
+/* Typography */
+body           { font-family: "Poppins", sans-serif; }
+.featured-text { font-family: "Montserrat", sans-serif;}
 
 /* Button styles */
 
@@ -595,8 +653,16 @@ video {
     border: 1px solid transparent;
 }
 
+header a {
+    border: 1px solid transparent;
+    transition: all 150ms;
+}
+
 header a:hover {
-    background-color: var(--light-accent-color)/50;
+    background-color: var(--featured-color);
+    border: 1px solid var(--featured-color);
+    border-radius: 15px;
+
 }
 
 footer a {
@@ -618,6 +684,12 @@ footer a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-36 {
+    margin-top: 9rem;
+  }
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
