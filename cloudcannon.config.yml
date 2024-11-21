@@ -1,0 +1,8 @@
+_schema: _schema
+paths: {}
+_structures:
+  blocks:
+    style: select
+    id_key:
+    values:
+timezone: Etc/UTC
