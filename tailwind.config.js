@@ -13,6 +13,7 @@ module.exports = {
         'accent': 'var(--accent-color)',
         'light-accent': 'var(--light-accent-color)',
         'base-color': 'var(--base-color)',
+        'light-base': 'var(--light-base-color)',
       }
     },
   },

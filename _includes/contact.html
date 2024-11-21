@@ -1,0 +1,29 @@
+<section class="border border-featured">
+  <div class="grid md:grid-cols-2 divide-x divide-featured">
+      <div class="relative">
+          <img class="w-full h-full object-cover " src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+      <form class="p-8 px-8 sm:px-16 flex flex-col col-span-1 md:pr-12">
+          <h3 class="col-span-1 pb-12 font-sans font-extrabold uppercase text-5xl">{{block.heading}}</h3>
+          <!-- Name -->
+          <div class="py-6 md:pt-0">
+          <label class="uppercase font-bold border-featured border-b-2 mb-2 block" for="_name"> Name </label>
+          <input class="p-1.5 bg-light-base w-full block border border-transparent focus:outline-none focus:border focus:border-featured" type="text" name="_name" id="_name" placeholder="{{block.name-placeholder}}" />  
+          </div>
+          <!-- Email -->
+          <div class="pb-6">
+          <label class="uppercase font-bold border-featured border-b-2 block mb-2" for="_replyto"> Email </label>
+          <input class="p-1.5 bg-light-base w-full block border border-transparent focus:outline-none focus:border focus:border-featured" type="email" name="_replyto" id="_replyto" placeholder="{{block.email-placeholder}}" />
+          </div>
+          <!-- Message -->
+          <div class="pb-6">
+          <label class="uppercase font-bold border-featured border-b-2 block mb-2" for="message">Message</label>
+          <textarea class="p-1.5 block w-full bg-light-base border border-transparent focus:outline-none focus:border focus:border-featured" name="message" id="message" placeholder="{{block.message-placeholder}}"></textarea>
+          </div>
+          <!-- Button -->
+          <div class="">
+          <a href="" type="submit" class="button"> Submit </a>
+          </div>
+      </form>
+  </div>
+</section>
