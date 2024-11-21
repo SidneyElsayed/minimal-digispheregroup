@@ -1,8 +1,61 @@
 _schema: _schema
 paths: {}
+_inputs:
+  layout:
+    type: select
+    label: Layout
+    comment: Choose the page layout type
+    options:
+      values: 
+        - default
+    cascade: true
+  id:
+    type: text
+    hidden: true
+    cascade: true
 _structures:
   blocks:
     style: select
-    id_key:
     values:
+      - label: cards section
+        value: 
+          id: cards-section
+          section-heading: Our services
+          card-loop: 
+          - image: https://images.unsplash.com/photo-1607369816048-311ebd65f2ca?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+            alt:
+            heading: Lorem dolor
+            text: >-
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem audantium, dolor blanditiis!
+            button-text:
+            button-link:
+      - label: image and text banner 
+        value: 
+          id: image-and-text-banner 
+          heading: Who we are
+          text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laborum id voluptates dicta cupiditate perferendis saepe. Repudiandae commodi accusantium dignissimos quisquam at impedit, fugit cumque distinctio quae architecto delectus amet?
+          button-text: Find out more
+          button-link: /index.html
+      - label: skinny small text banner 
+        value: 
+          id: skinny-small-text-banner 
+          name-banner:
+          - name: Brand name
+      - label: image grid 
+        value: 
+          id: image-grid
+          heading: Heading
+          text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ratione, ipsa ea ut, suscipit inventore quos quisquam, corrupti animi deserunt eaque reiciendis non veritatis ipsam quibusdam nobis iusto repudiandae odit!
+          image-loop:
+          - image: https://images.unsplash.com/photo-1673973835658-dd0d86d2abff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+            alt:
+          button-text: contact us
+          button-link: /index.html
+      - label: contact 
+        value: 
+          id: contact
+          heading: Contact us.
+          name-placeholder: name
+          email-placeholder: email
+          message-placeholder: type your message here
 timezone: Etc/UTC
