@@ -29,13 +29,14 @@ _structures:
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem audantium, dolor blanditiis!
             button-text:
             button-link:
-      - label: image and text banner 
+      - label: bg image and text banner 
         value: 
-          id: image-and-text-banner 
+          id: bg-image-and-text-banner 
           heading: Who we are
           text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laborum id voluptates dicta cupiditate perferendis saepe. Repudiandae commodi accusantium dignissimos quisquam at impedit, fugit cumque distinctio quae architecto delectus amet?
           button-text: Find out more
           button-link: /index.html
+          bg-image: https://plus.unsplash.com/premium_photo-1669863547357-b7d064cedaac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
       - label: skinny small text banner 
         value: 
           id: skinny-small-text-banner 
